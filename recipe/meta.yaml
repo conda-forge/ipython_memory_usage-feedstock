@@ -36,8 +36,6 @@ about:
   license_file: LICENSE
   summary:
     - IPython tool to report memory usage deltas for every command you type. If you are running out of RAM then use this tool to understand what’s happening. It also records the time spent running each command.
-    - In [3]: arr=np.random.uniform(size=int(1e7))
-    -   ‘arr=np.random.uniform(size=int(1e7))’ used 76.2578 MiB RAM in 0.33s, peaked 0.00 MiB above current, total RAM usage 107.37 MiB
 
 extra:
   recipe-maintainers:
