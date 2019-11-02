@@ -25,7 +25,6 @@ requirements:
     - python
     - ipython
 
-
 test:
   imports:
    - ipython_memory_usage
