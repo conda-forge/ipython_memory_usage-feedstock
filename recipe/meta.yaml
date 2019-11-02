@@ -1,4 +1,4 @@
-{% set name = "ipython-memory-usage" %}
+{% set name = "ipython_memory_usage" %}
 {% set version = "1.2" %}
 {% set sha256 = "1f4697210257f853fea74de0cf3fae60a32e550e578bac6f46de9b40c550422b" %}
 
@@ -31,7 +31,7 @@ test:
 
 about:
   home: https://github.com/ianozsvald/ipython_memory_usage
-  license: BSD2
+  license: BSD-2-Clause
   license_family: BSD
   license_file: LICENSE
   summary:
