@@ -1,6 +1,6 @@
 {% set name = "ipython_memory_usage" %}
 {% set version = "1.2" %}
-{% set sha256 = "1f4697210257f853fea74de0cf3fae60a32e550e578bac6f46de9b40c550422b" %}
+{% set sha256 = "1704ada665410f0443052efc108f4c8819c60bb7b0d6e7b253a098f0a66284d0" %}
 
 package:
   name: {{ name|lower }}
