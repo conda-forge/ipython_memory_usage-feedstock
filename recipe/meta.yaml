@@ -26,7 +26,7 @@ requirements:
     - ipython
 
 test:
-  command:
+  commands:
     - python -m IPython "import ipython_memory_usage"
 
 about:
