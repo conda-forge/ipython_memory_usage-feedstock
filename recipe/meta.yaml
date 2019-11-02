@@ -26,8 +26,8 @@ requirements:
     - ipython
 
 test:
-  imports:
-   - datetime
+  command:
+    - python -m IPython "import ipython_memory_usage"
 
 about:
   home: https://github.com/ianozsvald/ipython_memory_usage
