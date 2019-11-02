@@ -14,19 +14,17 @@ source:
 build:
   noarch: python
   number: 0
-  script: python setup.py install --single-version-externally-managed --record record.txt
+  script: "{{ PYTHON }} -m pip install . --no-deps --ignore-installed --no-cache-dir -vvv"
 
 requirements:
   build:
     - python
-    - setuptools
-    - memory_profiler
-    - IPython >=2.1
+    - pip
 
   run:
     - python
-    - memory_profiler
-    - IPython >=2.1
+    - ipython
+
 
 test:
   imports:
