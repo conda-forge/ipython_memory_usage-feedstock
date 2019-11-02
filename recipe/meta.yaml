@@ -27,7 +27,7 @@ requirements:
 
 test:
   imports:
-   - ipython_memory_usage
+   - datetime
 
 about:
   home: https://github.com/ianozsvald/ipython_memory_usage
@@ -39,5 +39,7 @@ about:
 
 extra:
   recipe-maintainers:
+    - xhochy
     - ianozsvald
     - ps-git
+    
