@@ -32,8 +32,10 @@ about:
   license: BSD-2-Clause
   license_family: BSD
   license_file: LICENSE
-  summary:
-    - IPython tool to report memory usage deltas for every command you type. If you are running out of RAM then use this tool to understand what’s happening. It also records the time spent running each command.
+  summary: |
+    IPython tool to report memory usage deltas for every command you type.
+    If you are running out of RAM then use this tool to understand what’s
+    happening. It also records the time spent running each command.
 
 extra:
   recipe-maintainers:
