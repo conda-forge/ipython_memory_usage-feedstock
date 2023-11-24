@@ -1,5 +1,5 @@
 {% set name = "ipython_memory_usage" %}
-{% set version = "1.7" %}
+{% set version = "1.8.2" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: 76912d35dc57a6a9dd1158c0e80da5d6a703cbed876bdb8b6390d6f9aa719946
+  sha256: d4186fab309a46056dfd4d2d76cbb54e83d901dd5543db4be655225bf22dd142
 
 build:
   noarch: python
