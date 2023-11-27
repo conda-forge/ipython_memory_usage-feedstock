@@ -147,6 +147,5 @@ Feedstock Maintainers
 =====================
 
 * [@ianozsvald](https://github.com/ianozsvald/)
-* [@ps-git](https://github.com/ps-git/)
 * [@xhochy](https://github.com/xhochy/)
 
