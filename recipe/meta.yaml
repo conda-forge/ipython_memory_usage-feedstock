@@ -16,20 +16,26 @@ build:
 
 requirements:
   host:
-    - python >=3.6
+    - python >=3.7
     - pip
   run:
-    - python >=3.6
-    - ipython
+    - python >=3.7
+    - ipython >=7.0
+    - memory_profiler
+    - psutil
 
 test:
+  requires:
+    - pip
+  files:
+    - test_import.py
   commands:
-    - python -m IPython "import ipython_memory_usage"
+    - python -m IPython test_import.py
+    - pip check
 
 about:
   home: https://github.com/ianozsvald/ipython_memory_usage
-  license: BSD-2-Clause
-  license_family: BSD
+  license: MIT
   license_file: LICENSE
   summary: |
     IPython tool to report memory usage deltas for every command you type.
