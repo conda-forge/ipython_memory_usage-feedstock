@@ -5,7 +5,7 @@ Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/ipython_memory_
 
 Home: https://github.com/ianozsvald/ipython_memory_usage
 
-Package license: BSD-2-Clause
+Package license: MIT
 
 Summary: IPython tool to report memory usage deltas for every command you type.
 If you are running out of RAM then use this tool to understand what’s
