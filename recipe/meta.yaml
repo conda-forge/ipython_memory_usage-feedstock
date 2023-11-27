@@ -1,5 +1,5 @@
 {% set name = "ipython_memory_usage" %}
-{% set version = "1.7" %}
+{% set version = "1.8.3" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: 76912d35dc57a6a9dd1158c0e80da5d6a703cbed876bdb8b6390d6f9aa719946
+  sha256: b19d8952c8cc8be1e59b5850ba55c16394c0efb7f14427205a25ebd54aa3f265
 
 build:
   noarch: python
@@ -16,21 +16,26 @@ build:
 
 requirements:
   host:
-    - python
+    - python >=3.7
     - pip
-
   run:
-    - python
-    - ipython
+    - python >=3.7
+    - ipython >=7.0
+    - memory_profiler
+    - psutil
 
 test:
+  requires:
+    - pip
+  files:
+    - test_import.py
   commands:
-    - python -m IPython "import ipython_memory_usage"
+    - python -m IPython test_import.py
+    - pip check
 
 about:
   home: https://github.com/ianozsvald/ipython_memory_usage
-  license: BSD-2-Clause
-  license_family: BSD
+  license: MIT
   license_file: LICENSE
   summary: |
     IPython tool to report memory usage deltas for every command you type.
@@ -41,5 +46,3 @@ extra:
   recipe-maintainers:
     - xhochy
     - ianozsvald
-    - ps-git
-
