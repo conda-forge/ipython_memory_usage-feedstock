@@ -5,4 +5,4 @@ github:
 conda_build:
   pkg_format: '2'
 bot:
-  inspect: update-grayskull
+  inspection: update-grayskull
